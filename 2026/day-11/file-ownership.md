@@ -6,7 +6,6 @@
 
 **Format:** `-rw-r--r-- 1 owner group size date filename`
 
-![task_1](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task1.png)
 
 ### Meaning of Each Part
 
@@ -14,21 +13,21 @@
 |----|----|----|
 | Permissions | `-rw-r--r--` | Who can read/write the file |
 | Links | `1` | Number of hard links |
-| Owner | `sanket` | User who owns the file |
-| Group | `sanket` | Group that owns the file |
+| Owner | `ubuntu` | User who owns the file |
+| Group | `ubuntu` | Group that owns the file |
 | Size | `12` | File size in bytes |
 | Date | `Feb 3 14:25` | Last modified date & time |
 | Filename | `day-11.txt` | Name of the file |
 
 ### Who Owns the File?
 
-- **Owner:** `sanket`
-- **Group:** `sanket`
+- **Owner:** `ubuntu`
+- **Group:** `ubuntu`
 
 ### This Means:
 
-- **sanket** are the **owner** of the file
-- The file belongs to the **group** named **sanket**
+- **ubuntu** are the **owner** of the file
+- The file belongs to the **group** named **ubuntu**
 
 ### Difference Between Owner and Group
 
@@ -45,7 +44,6 @@
 4. Change owner to `berlin`
 5. Verify the changes
 
-![task_2](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task2.png)
 
 ---
 
@@ -57,7 +55,7 @@
 4. Change file group to `heist-team`
 5. Verify the change
 
-![task_3](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task3.png)
+
 
 ---
 
@@ -70,7 +68,7 @@ Using `chown` you can change both owner and group together:
 3. Create directory `app-logs/`
 4. Change its owner to `berlin` and group to `heist-team`
 
-![task_4](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task4.png)
+
 
 ---
 
@@ -84,11 +82,11 @@ Using `chown` you can change both owner and group together:
    touch heist-project/plans/strategy.conf
    ```
 
-![task_5.1](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task5.1.png)
+
 
 2. Create group `planners`: `sudo groupadd planners`
 
-![task_5.2](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task5.2.png)
+
 
 3. Change ownership of entire `heist-project/` directory:
    - Owner: `professor`
@@ -97,7 +95,7 @@ Using `chown` you can change both owner and group together:
 
 4. Verify all files and subdirectories changed: `ls -lR heist-project/`
 
-![task_5.3](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task5.3.png)
+
 
 ---
 
@@ -106,7 +104,7 @@ Using `chown` you can change both owner and group together:
 1. Create users: `tokyo`, `berlin`, `nairobi` (if not already created)
 2. Create groups: `vault-team`, `tech-team`
 
-![task_6.2](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task6.2.png)
+
 
 3. Create directory: `bank-heist/`
 4. Create 3 files inside:
@@ -116,7 +114,7 @@ Using `chown` you can change both owner and group together:
    touch bank-heist/escape-plan.txt
    ```
 
-![task_64](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task64.png)   
+
 
 5. Set different ownership:
    - `access-codes.txt` → owner: `tokyo`, group: `vault-team`
@@ -125,7 +123,7 @@ Using `chown` you can change both owner and group together:
 
 **Verify:** `ls -l bank-heist/`
 
-![task_6.5](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-11/task6.5.png)
+
 
 ---
 
