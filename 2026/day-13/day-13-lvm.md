@@ -11,13 +11,13 @@ df -h      # Show mounted filesystems and their usage
 
 ### 2. Create Physical Volume
 ```bash
-pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM
+pvcreate /dev/nvme4n1   # Initialize /dev/nvme4n1 as a physical volume for LVM
 pvs                      # Verify physical volume creation
 ```
 
 ### 3. Create Volume Group
 ```bash
-vgcreate devops-vg /dev/nvme1n1   # Create a volume group named devops-vg
+vgcreate devops-vg /dev/nvme4n1   # Create a volume group named devops-vg
 vgs                                # Verify volume group creation
 ```
 
@@ -58,12 +58,12 @@ df -h
 | Device       | Size | Mountpoint | Notes |
 |-------------|------|------------|-------|
 | /dev/nvme0n1 | 8G   | /          | Root filesystem |
-| /dev/nvme1n1 | 10G  | -          | Free disk available |
+| /dev/nvme4n1 | 20G  | -          | Free disk available |
 
 - No existing physical volumes, volume groups, or logical volumes
 - `/dev/root` usage: 6.8G, 27% used
 
-✅ **Conclusion:** A free disk (`/dev/nvme1n1`) is available for LVM.
+✅ **Conclusion:** A free disk (`/dev/nvme4n1`) is available for LVM.
 
 ![day13-task1.1](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task1.1.png)
 ![day13-task1.2](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task1.2.png)
@@ -75,13 +75,13 @@ df -h
 
 **Command:**
 ```bash
-pvcreate /dev/nvme1n1
+pvcreate /dev/nvme4n1
 pvs
 ```
 
 
 **Observation:**
-- `/dev/nvme1n1` initialized as a physical volume
+- `/dev/nvme4n1` initialized as a physical volume
 - `pvs` shows it ready for LVM
 
 ![day13-task2](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task2.png)
@@ -92,7 +92,7 @@ pvs
 
 **Command:**
 ```bash
-vgcreate devops-vg /dev/nvme1n1
+vgcreate devops-vg /dev/nvme4n1
 vgs
 ```
 
