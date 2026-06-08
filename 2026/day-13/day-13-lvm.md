@@ -65,7 +65,9 @@ df -h
 
 ✅ **Conclusion:** A free disk (`/dev/nvme1n1`) is available for LVM.
 
-
+![day13-task1.1](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task1.1.png)
+![day13-task1.2](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task1.2.png)
+![day13-task1.3](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task1.3.png)
 
 ---
 
@@ -77,11 +79,12 @@ pvcreate /dev/nvme1n1
 pvs
 ```
 
+
 **Observation:**
 - `/dev/nvme1n1` initialized as a physical volume
 - `pvs` shows it ready for LVM
 
-
+![day13-task2](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task2.png)
 
 ---
 
@@ -96,7 +99,7 @@ vgs
 **Observation:**
 - Volume group `devops-vg` created with 10G free space
 
-
+![day13-task3](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task3.png)
 
 ---
 
@@ -111,7 +114,7 @@ lvs
 **Observation:**
 - Logical volume `app-data` of 500MB created under `devops-vg`
 
-
+![day13-task4](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task4.png)
 
 ---
 
@@ -130,7 +133,7 @@ df -h /mnt/app-data
 - Mounted at `/mnt/app-data`
 - Filesystem shows: Size 452M, Used 24K, Available 417M (filesystem overhead reduces usable size)
 
-
+![day13-task5](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task5.png)
 
 ---
 
@@ -148,6 +151,7 @@ df -h /mnt/app-data
 - Filesystem resized to use new space
 - Filesystem shows: Size 637M, Used 24K, Available 594M (filesystem overhead applies)
 
+![day13-task5](https://github.com/prajyotfulsundar14/90DaysOfDevOps/blob/master/2026/day-13/day13-task5.png)
 
 ---
 
