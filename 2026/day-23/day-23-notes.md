@@ -87,9 +87,9 @@
 
 6. What is the difference between `origin` and `upstream`?
 - `origin`: origin is the default name for the repo you cloned,points to your own GitHub repository where you push and pull changes.
-`example`: https://github.com/srdangat/devops-git-practice.git
+`example`: https://github.com/prajyotfulsundar14/devops-git-practice.git
 - `upstream`: upstream refers to the original repository you forked from.You use it to pull updates from the original project into your fork.
-`example`: https://github.com/srdangat/90DaysOfDevOps
+`example`: https://github.com/prajyotfulsundar14/90DaysOfDevOps
 
 ---
 
