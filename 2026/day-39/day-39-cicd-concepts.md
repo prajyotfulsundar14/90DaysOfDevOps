@@ -105,7 +105,7 @@ Think about a team of 5 developers all pushing code to the same repo manually de
 Draw a CI/CD pipeline for this scenario:
 > A developer pushes code to GitHub. The app is tested, built into a Docker image, and deployed to a staging server.
 
-![image](images/CICD.jpg)
+![image](images/CICD.jpeg)
 ---
 
 ### Task 5: Explore in the Wild

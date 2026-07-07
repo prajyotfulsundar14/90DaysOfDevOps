@@ -36,6 +36,7 @@
    [Schedule Trigger](workflows/hello.yml)
 
 - cron expression for every Monday at 9 AM is `0 9 * * 1`
+      ![images](images/cron.png)
 
 ### Task 3: Manual Trigger
 1. Create `.github/workflows/manual.yml` with a `workflow_dispatch:` trigger
