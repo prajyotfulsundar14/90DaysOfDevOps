@@ -73,8 +73,7 @@ Create `.github/workflows/pr-pipeline.yml`:
 
 -   Only Tests run
 
-    ![image](images/task4.png)
-
+  
 ---
 
 ### Task 5: Main Branch Pipeline
@@ -92,7 +91,7 @@ Create `.github/workflows/main-pipeline.yml`:
 
   - Yes Run test → build docker → deploy to production
 
-    ![image](images/task5.png)
+
 
 ---
 
@@ -113,7 +112,6 @@ Create `.github/workflows/health-check.yml`:
    echo "- Time: $(date)" >> $GITHUB_STEP_SUMMARY
    ```
 
-    ![image](images/task6.png)
 
 ---
 
@@ -141,7 +139,6 @@ Create `.github/workflows/health-check.yml`:
 
 
 
-   ![image](images/badges.png)
 
 
 ---
@@ -152,5 +149,3 @@ Want to go above and beyond? Add a **DevSecOps** step to your main pipeline:
 2. Fail the pipeline if any **CRITICAL** severity CVE is found
 3. Upload the scan report as an artifact
 
-
-   ![image](images/trivy-artifact.png)
